@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## start json-server
+ json-server --watch './src/db/db.json' --port 3500
+
 ## Available Scripts
 
 In the project directory, you can run:
