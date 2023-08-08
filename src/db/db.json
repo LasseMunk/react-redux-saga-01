@@ -1,0 +1,31 @@
+{
+    "products": [
+        {
+            "id":1,
+            "name":"Samsung M40",
+            "color": "black",
+            "price": 1500,
+            "category":"mobile",
+            "brand": "samsung",
+            "photo": "https://i.gadgets360cdn.com/large/samsung_galaxy_m40_official_render_1559196674295.jpg"
+        },
+         {
+            "id":2,
+            "name":"T-shirt",
+            "color": "Yellow",
+            "price": 66,
+            "category":"cloths",
+            "brand": "nike",
+            "photo": "https://billigtshirt.dk/image/cache/catalog/ct1909879/1909878-560000_Core%20Unify%20Training%20Tee%20M_Front%20-%20Kopi-500x500.jpg"
+        },
+         {
+            "id":3,
+            "name":"Shoe",
+            "color": "Green",
+            "price": 103,
+            "category":"Shoes",
+            "brand": "Rebook",
+            "photo": "https://www.campusshoes.com/cdn/shop/products/RAISEGreenWomenRunningShoes.jpg?v=1670325443"
+        }
+    ]
+}
