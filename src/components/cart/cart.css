@@ -1,0 +1,33 @@
+.cart-contents {
+    border: 1px dotted grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+.cart-contents table {
+    border-collapse: collapse;
+}
+.cart-contents-header {
+    font-weight: bold;
+}
+
+.cart-price-value
+{
+    text-align: right;
+}
+
+.cart-price-summery {
+    display: flex;
+    flex-direction: column;
+}
+#sum-line {
+    border: 1px dotted red;
+}
+#price-total 
+{
+    font-weight: bold;
+}

@@ -10,10 +10,14 @@ const productsSlice = createSlice({
 		},
         setProductList(state, action)
         {   
+            // TODO - Add unique uuidv4 key to each product
             return [...action.data];
+        },
+        productSearch(state, action) {
+            
         }
 	},
 });
 
-export const { productList, setProductList } = productsSlice.actions;
+export const { productList, setProductList, productSearch } = productsSlice.actions;
 export const productsReducer = productsSlice.reducer;

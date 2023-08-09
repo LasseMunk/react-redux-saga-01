@@ -5,6 +5,7 @@ const cartDataSlice = createSlice({
 	initialState: [],
 	reducers: {
 		addToCart(state, action) {
+			// TODO - if item already exists, then don't add but throw warning
 			state.push(action.payload.item);
 		},
 		removeFromCart(state, action) {

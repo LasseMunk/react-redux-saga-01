@@ -2,28 +2,28 @@ import { useEffect } from "react";
 import "./products.css";
 import { useSelector, useDispatch } from "react-redux";
 import { productList } from "../../redux/slices/product-slice";
-import CartButtons from "../cart-buttons/cart-buttons";
-import CartButtonsGlobal from "../cart-global-buttons/cart-global-buttons";
+import CartButtonsAdd from "../cart-buttons/cart-button-add";
 
 function Products() {
 	const products = useSelector((state) => state.products);
-    const dispatch = useDispatch();
+	const dispatch = useDispatch();
 
-    useEffect( () => {
-        dispatch(productList());
-    }, []) // no array means the effect will only run once when the page is loaded
+	useEffect(() => {
+		dispatch(productList());
+	}, []); // no array means the effect will only run once when the page is loaded
 
 	return (
 		<div className='products-container'>
 			<div>
 				<h3>Products</h3>
 			</div>
-            <CartButtonsGlobal/>
-			<div className="product-items-container">
-				{products.map((item) => (
+
+			<div className='product-items-container'>
+				{
+				products.map((item) => (
 					<div
 						className='product-item'
-						key={"product-item_" + item.id}
+						key={"item-id_" + item.id}
 					>
 						<img
 							className='product-photo'
@@ -37,7 +37,7 @@ function Products() {
 							<li>Price: {item.price} </li>
 							<li>Category: {item.category} </li>
 						</ul>
-						<CartButtons item={item}/>
+						<CartButtonsAdd item={item} />
 					</div>
 				))}
 			</div>
